@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mathieu De Craene's personal website showcasing bio, publications, open data, social links, and jazz scores.">
+  <title>Mathieu De Craene</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="sidebar" id="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <ul class="menu">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#data">Open Data</a></li>
+        <li><a href="#social">Social</a></li>
+        <li><a href="#scores">Jazz scores</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="main">
+      <header class="header">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <h1>Mathieu De Craene</h1>
+      </header>
+
+      <section class="content" id="bio">
+        <h2>Bio</h2>
+        <p>Researcher in medical imaging. I have been employed at <a href="https://www.philips.fr/">Philips</a>, <a
+            href="https://www.upf.edu/">UPF</a> and <a href="https://www.uclouvain.be/">UCLouvain</a>.</p>
+        <p>Hobbies: music (saxophone and bass player), <a href="https://lesenrolleres.org/">rollerblading</a>, biking.
+        </p>
+      </section>
+
+      <section class="content" id="publications">
+        <h2>Publications</h2>
+        <p>Check out my <a href="https://scholar.google.fr/citations?user=F1HqGU0AAAAJ&hl=en">Google scholar</a> and <a
+            href="https://www.researchgate.net/profile/Mathieu-De-Craene">Research Gate</a> profiles. </p>
+      </section>
+
+      <section class="content" id="data">
+        <h2>Open Data</h2>
+        <p>During my early days at Philips, I was involved in a collaboration between Industry and Academia to validate
+          the quantification of cardiac motion and deformation images, mostly from 3D ultrasound images.</p>
+        <p>This resulted in the following public datasets.</p>
+
+        <h3>cMAC challenge data</h3>
+        <p>This data was used for the first Cardiac Motion Analysis Challenge,
+          held at the 2011 MICCAI workshop entitled "Statistical Atlases and Computational Models of the Heart:
+          Imaging and
+          Modelling Challenges" (<a href="https://stacom.github.io/">STACOM 11</a>).</p>
+        <p>The data includes MR and ultrasound images of 15 healthy volunteers in MR (including SSP and 4D tagged MR)
+          and 3D ultrasound (apical view).</p>
+        <p>The data is hosted on the <a href="https://www.cardiacatlas.org/motion-tracking-2011-challenge/">cardiac
+            atlas platform</a>.</p>
+        <p>Get a copy of the paper describing the challenge and the dataset <a
+            href="https://inria.hal.science/hal-00855928/file/tobon-gomez12a_v2.0.pdf">here</a>.</p>
+
+        <h3>3D Straus data</h3>
+        <p>The Straus acronym stands for "Strain assessment in ultrasound".</p>
+        <p>Initially, Straus was a collaboration between 3 partners:
+          <a href="https://www.welcometothejungle.com/en/companies/philipshealthtechnologyinnovationparis/medisys">Philips
+            France</a>,
+          <a href="https://www.kuleuven.be/english/kuleuven">KU Leuven</a>
+          and <a href="https://team.inria.fr/epione/en/">Inria</a>.
+        </p>
+        <p>At the <a href="https://stacom.github.io/">STACOM 12</a> MICCAI workshop,
+          we released a dataset of synthetic 3D ultrasound images to validate 3D speckle tracking methods.</p>
+        <p>As the original data URL is no longer available, <a href="https://straus.decraene.org/">a copy of the
+            dataset can be found here</a>.</p>
+        <p> The paper describing the dataset and the challenge can be <a
+            href="https://inria.hal.science/hal-00840039/document">downloaded from this HAL link</a>.</p>
+
+        <h3>3D synthetic multimodal cardiac data</h3>
+        <p>In a collaboration with <a href="https://humanheart-project.creatis.insa-lyon.fr/databases.html">Creatis</a>,
+          we improved the realism of the 3D Straus data by combining real images with synthetic motion fields and
+          advanced
+          ultrasound and MR modeling techniques. </p>
+        <p>The resulting multimodal dataset can be downloaded from the <a
+            href="https://humanheart-project.creatis.insa-lyon.fr/database/#collection/587de6f4e1af3f30a2980a58">Creatis Human
+            Heart Project webpage</a>.</p>
+        <p> The ultrasound part of the dataset can be downloaded from <a
+            href="https://www-sop.inria.fr/asclepios/data/STRAUS/">this page</a>,
+          hosted at <a href="https://team.inria.fr/epione/en/data/straus/">Inria, ASCLEPIOS/EPIONE</a>. </p>
+        <p>See <a href="https://lirias.kuleuven.be/retrieve/300334">this paper</a> for a description of the ultrasound
+          modeling pipeline, and
+          <a href="https://inria.hal.science/hal-01533366/document">this other paper</a> for the extension to MR and
+          ultrasound.
+        </p>
+
+        <h3>CAMUS synthetic database</h3>
+        <p>As a 2D version of the Straus data, we released a synthetic 2D dataset for training DL-based image tracking
+          algorithms.</p>
+        <p>The data is available on the <a
+            href="https://humanheart-project.creatis.insa-lyon.fr/database/#collection/61c250d873e9f0047c37d62f">Human
+            Heart Project webpage</a> hosted by Creatis.</p>
+        <p>Get <a href="https://hal.science/hal-03603014/document">a copy of the paper here</a>. </p>
+      </section>
+
+      <section class="content" id="social">
+        <h2>Social</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/mathieudecraene/?hl=en">Instagram</a></li>
+          <li><a href="https://musicians.today/@decraene">Mastodon</a></li>
+          <li><a href="https://fr.linkedin.com/in/decraene">Linkedin</a></li>
+          <li><a href="https://bsky.app/profile/decraene.bsky.social">Bluesky</a></li>
+        </ul>
+      </section>
+
+      <section class="content" id="scores">
+        <h2>Jazz scores</h2>
+        <p>Some scores I'm practicing are available <a href="https://partoches.decraene.org/">here</a>. Sorry for the
+          low image resolution! </p>
+      </section>
+
+      <div class="footer">
+        <a href="https://www.decraene.org">decraene.org</a>. <em>Last updated: May 2025.</em>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const menuLinks = document.querySelectorAll('.menu a');
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    // Close menu when a link is clicked (on mobile)
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('visible');
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
