@@ -20,7 +20,7 @@ body {
   }
 
   h3 {
-    color: #ebe9d6; /* Light yellow accent */
+    color: #ebe9d6; 
     font-style: italic;
   }
   
@@ -49,7 +49,7 @@ body {
   
   .sidebar .logo {
     font-size: 24px;
-    color: #ffc107; /* Warm yellow accent */
+    color: #ebe9d6; /* Light yellow accent */
   }
 
   .logo {
@@ -112,7 +112,7 @@ body {
     
   .menu-toggle {
     font-size: 24px;
-    color: #ffc107;
+    color: #fffef4;
     background: none;
     border: none;
     cursor: pointer;
@@ -122,7 +122,7 @@ body {
     left: 5px; /* Align to the left */
     z-index: 1000; /* Ensures it's above other elements */
     padding: 10px;
-    background-color: #1e1e1e;
+    background-color: #352f44;
     border-radius: 5px;
   }
   
