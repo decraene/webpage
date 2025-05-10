@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #fffef4;
-    background-color: #121212;
+    background-color: #2a2438; /* Dark purple background */
   }
   
   a {
@@ -12,15 +12,15 @@ body {
   }
 
   h1 {
-    color: #ffc107; /* Warm yellow accent */
+    color: #ebe9d6; /* Light yellow accent */
   }
 
   h2 {
-    color: #be9004; /* Darker yellow accent */
+    color: #ebe9d6; 
   }
 
   h3 {
-    color: #be9004; /* Same */
+    color: #ebe9d6; /* Light yellow accent */
     font-style: italic;
   }
   
@@ -32,7 +32,7 @@ body {
   /* Sidebar */
   .sidebar {
     width: 120px;
-    background-color: #1e1e1e;
+    background-color: #352f44; /* Darker purple for sidebar */
     color: #f5f5f5;
     padding: 20px;
     display: flex;
@@ -76,12 +76,12 @@ body {
   
   .sidebar .menu li a {
     text-decoration: none;
-    color: #be9004;
+    color: #ebe9d6;
     transition: color 0.3s;
   }
   
   .sidebar .menu li a:hover {
-    color: #ffc107;
+    color: #eee9c1;
   }
   
   /* Main Content */
@@ -94,14 +94,14 @@ body {
   }
   
   .header {
-    background-color: #1e1e1e;
+    background-color: #352f44;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   .footer {
-    background-color: #1e1e1e;
+    background-color: #352f44;
     padding: 10px 20px;
     margin-top: auto;
     width: auto;
