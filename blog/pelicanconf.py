@@ -17,6 +17,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+STATIC_PATHS = ["images", "extra/robots.txt", "extra/favicon.ico"]
+EXTRA_PATH_METADATA = {
+    "extra/robots.txt": {"path": "robots.txt"},
+    "extra/favicon.ico": {"path": "favicon.ico"}
+}
+
 # Social links
 SOCIAL = (
     ("Instagram", "https://www.instagram.com/mathieudecraene/"),
@@ -26,6 +32,7 @@ SOCIAL = (
     ("Soundcloud", "https://soundcloud.com/mathieu-de-craene")
 )
 
+ARTICLE_ORDER_BY = 'basename'
 DEFAULT_PAGINATION = 100
 
 # Uncomment following line if you want document-relative URLs when developing
