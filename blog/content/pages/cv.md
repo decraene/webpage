@@ -8,3 +8,4 @@ Download my CV in
 
 
 Generated using [Reactive-Resume](https://github.com/AmruthPillai/Reactive-Resume). 
+I highly recommend this tool! 
