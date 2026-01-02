@@ -85,9 +85,10 @@ pre {
 }
 
 .main img {
-    max-width: 20%;
+    max-width: 80%;
     height: auto;
-    text-align: center;
+    display: block;
+    margin: auto;
 }
 
 /* Sidebar */
