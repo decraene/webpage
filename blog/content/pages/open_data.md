@@ -7,7 +7,7 @@ This resulted in the following public datasets.
 
 ### cMAC challenge data
 
-This data was used for the first Cardiac Motion Analysis Challenge, held at the 2011 MICCAI workshop entitled "Statistical Atlases and Computational Models of the Heart: Imaging an Modelling Challenges" ([STACOM 11]("https://stacom.github.io/").
+This data was used for the first Cardiac Motion Analysis Challenge, held at the 2011 MICCAI workshop entitled "Statistical Atlases and Computational Models of the Heart: Imaging an Modelling Challenges" (aka [STACOM 11]("https://stacom.github.io/")).
 
 The data includes MR and ultrasound images of 15 healthy volunteers in MR (including SSP and 4D tagged MR)
 and 3D ultrasound (apical view).
