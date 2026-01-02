@@ -23,9 +23,10 @@ SOCIAL = (
     ("Mastodon", "https://musicians.today/@decraene"),
     ("Linked In", "https://fr.linkedin.com/in/decraene"),
     ("Bluesky", "https://bsky.app/profile/decraene.bsky.social"),
+    ("Soundcloud", "https://soundcloud.com/mathieu-de-craene")
 )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 100
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
