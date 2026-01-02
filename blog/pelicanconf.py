@@ -8,6 +8,8 @@ TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'English'
 
+SUMMARY_MAX_LENGTH = 50 # does not seem to have any effect? 
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
