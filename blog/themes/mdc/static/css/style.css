@@ -27,7 +27,6 @@ a:hover {
 }
 
 h1 {
-    margin: 15px auto;
     text-align: center;
 }
 
@@ -80,6 +79,7 @@ pre {
 .main {
     margin-left: 1em;
     margin-right: 1em;
+    min-height: 50dvh;
     flex: 1;
     text-justify: inter-word;
 }
@@ -115,17 +115,14 @@ pre {
 .sidebar ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-
-.sidebar li {
-    margin-bottom: 15px;
 }
 
 .sidebar li a {
     text-decoration: none;
     color: #ebe9d6;
     transition: color 0.3s;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 .sidebar a:hover {
