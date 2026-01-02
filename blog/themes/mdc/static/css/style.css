@@ -1,0 +1,220 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fffef4;
+    min-width: 400px;
+    min-height: 200px;
+    padding: 0;
+    background-color: #352f44;
+    /* Dark purple background */
+    margin-left: 160px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+a {
+    color: #d6faff;
+    text-decoration: underline;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a {
+    color: inherit !important
+}
+
+h2 a {
+    color: inherit !important
+}
+
+h3 a {
+    color: inherit !important
+}
+
+h4 a {
+    color: inherit !important
+}
+
+h5 a {
+    color: inherit !important
+}
+
+h6 a {
+    color: inherit !important
+}
+
+#post-list {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+pre {
+    margin: 2em 1em 2em 4em;
+}
+
+.header {
+    display: block;
+    padding: 1em;
+}
+
+.main {
+    padding: 2em;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 120px;
+    background-color: #2a2438;
+    color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    /* Ensures the sidebar stays fixed */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100dvh;
+    /* Full height */
+    overflow-y: auto;
+    /* Allows scrolling if menu is long */
+    transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #ebe9d6;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #eee9c1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    color: #ebe9d6;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    /* Hidden on desktop */
+    position: fixed;
+    /* Keeps it visible when scrolling */
+    top: 5px;
+    /* Adjust to position at the top */
+    left: 5px;
+    /* Align to the left */
+    z-index: 1000;
+    /* Ensures it's above other elements */
+    padding: 10px;
+    background-color: #352f44;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 1em;
+}
+
+#extras {
+    margin: 2em;
+    overflow: hidden;
+    border: #352f44;
+    border-style: solid;
+    border-width: medium;
+}
+
+#extras h2 {
+    color: #d0e8ec;
+    font-size: 1.1em;
+    margin-bottom: .25em;
+    padding: 0;
+}
+
+#extras ul {
+    list-style: none;
+}
+
+#extras li {
+    padding: 1em auto auto 1em;
+}
+
+#extras a:link,
+#extras a:visited {
+    color: #c1d0d3;
+    display: block;
+    text-decoration: none;
+}
+
+#extras a:hover,
+#extras a:active {
+    color: #fff;
+}
+
+#extras .social {
+    float: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    body {
+        margin-left: 0;
+    }
+
+    h1 {
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .sidebar {
+        transform: translateX(-250px);
+    }
+
+    .sidebar.visible {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+}
