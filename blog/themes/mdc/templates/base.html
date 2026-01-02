@@ -58,9 +58,6 @@
   {% block body %}
   {% block nav %}
   <nav class="sidebar" id="sidebar">
-    <div class="logo">
-      <img src="{{ SITEURL }}/theme/img/logo.png" alt="Logo">
-    </div>
     <ul class="menu">
       {% for title, link in MENUITEMS %}
       <li><a href="{{ link }}">{{ title }}</a></li>
@@ -84,6 +81,9 @@
     {% block header %}
     <hgroup>
       <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="logo">
+        <img src="{{ SITEURL }}/theme/img/logo.png" alt="Logo">
+      </div>
       <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
     </hgroup>
     {% endblock header %}
@@ -93,22 +93,20 @@
     {% block content %}
     {% endblock content %}
   </main>
-  <section id="extras">
-    <hr>
-    <h2>Follow me elsewhere</h2>
-    {% for name, link in SOCIAL %}
-    <li><a href="{{ link }}">{{ name }}</a></li>
-    {% endfor %}
-  </section>
   <footer>
     {% block footer %}
     <address>
-      Powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>.
+      <hr>
+      <!-- <section id="extras"> -->
+      <h4>Follow me elsewhere</h4>
+      {% for name, link in SOCIAL %}
+      <li><a href="{{ link }}">{{ name }}</a></li>
+      {% endfor %}
+      <!-- </section> -->
     </address>
     {% endblock footer %}
   </footer>
   {% endblock body %}
-
 
   <script>
     const menuToggle = document.getElementById('menuToggle');

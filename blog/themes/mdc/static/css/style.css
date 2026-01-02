@@ -26,6 +26,19 @@ a:hover {
     text-decoration: underline;
 }
 
+h1 {
+    margin: 15px auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
 h1 a {
     color: inherit !important
 }
@@ -73,7 +86,7 @@ pre {
     width: 120px;
     background-color: #2a2438;
     color: #f5f5f5;
-    padding: 20px;
+    padding: 80px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -117,7 +130,7 @@ pre {
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
 }
 
@@ -144,45 +157,20 @@ pre {
 
 footer {
     padding: 1em;
-}
-
-#extras {
-    margin: 2em;
-    overflow: hidden;
-    border: #352f44;
-    border-style: solid;
-    border-width: medium;
-}
-
-#extras h2 {
-    color: #d0e8ec;
-    font-size: 1.1em;
-    margin-bottom: .25em;
-    padding: 0;
-}
-
-#extras ul {
     list-style: none;
 }
 
-#extras li {
+address li {
     padding: 1em auto auto 1em;
 }
-
-#extras a:link,
-#extras a:visited {
+address a:link,
+address a:visited,
+address a:hover,
+address a:active
+{
     color: #c1d0d3;
     display: block;
     text-decoration: none;
-}
-
-#extras a:hover,
-#extras a:active {
-    color: #fff;
-}
-
-#extras .social {
-    float: right;
 }
 
 /* Responsive Design */
@@ -190,19 +178,6 @@ footer {
 
     body {
         margin-left: 0;
-    }
-
-    h1 {
-        margin: 15px auto;
-        text-align: center;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    h3 {
-        text-align: center;
     }
 
     .sidebar {
@@ -215,6 +190,10 @@ footer {
 
     .menu-toggle {
         display: flex;
+    }
+
+    .logo img {
+    max-width: 40%;
     }
 
 }
