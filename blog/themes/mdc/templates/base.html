@@ -93,17 +93,15 @@
     {% block content %}
     {% endblock content %}
   </main>
-  <footer>
+  <footer id="footer">
     {% block footer %}
-    <address>
-      <!-- <section id="extras"> -->
-      <h4>Follow me: </h4>
-      {% for name, link in SOCIAL %}
-      <li><a href="{{ link }}">{{ name }}</a></li>
-      {% endfor %}
-      <!-- </section> -->
-    </address>
+    <h4>Follow me: </h4>
+    <ul>
+    {% for name, link in SOCIAL %}
+    <li><a href="{{ link }}">{{ name }}</a></li>  
+    {% endfor %}
     {% endblock footer %}
+    </ul>
   </footer>
   {% endblock body %}
 
