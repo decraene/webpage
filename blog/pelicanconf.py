@@ -8,7 +8,7 @@ TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'English'
 
-SUMMARY_MAX_LENGTH = 50 # does not seem to have any effect? 
+SUMMARY_MAX_LENGTH = 0 # no summary unless specified in the header
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -17,15 +17,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
-)
-
-# Social widget
+# Social links
 SOCIAL = (
     ("Instagram", "https://www.instagram.com/mathieudecraene/"),
     ("Mastodon", "https://musicians.today/@decraene"),
