@@ -164,6 +164,14 @@ pre {
     border-radius: 5px;
 }
 
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline
+}
+
 footer {
     list-style: none;
     padding-top: 1em;
@@ -205,6 +213,6 @@ address a:active
 
     .logo img {
     max-width: 40%;
-    }
+}
 
 }
