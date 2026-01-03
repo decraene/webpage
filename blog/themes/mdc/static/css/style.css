@@ -95,6 +95,7 @@ pre {
 .card {
 width: 190px;
   overflow: hidden;
+  padding: 1em;
   height: 150px;
   border-radius: 1rem;
   background-color: #4158D0;
