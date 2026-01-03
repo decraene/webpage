@@ -8,7 +8,7 @@ TIMEZONE = 'Europe/Rome'
 
 DEFAULT_LANG = 'English'
 
-SUMMARY_MAX_LENGTH = 0 # no summary unless specified in the header
+SUMMARY_MAX_LENGTH = 50 # no summary unless specified in the header
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
