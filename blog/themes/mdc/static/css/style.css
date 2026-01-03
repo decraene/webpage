@@ -2,7 +2,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fffef4;
     min-width: 400px;
-    min-height: 200px;
+    min-height: 400px;
     padding: 0;
     background-color: #2a2438;
     /* Dark purple background */
@@ -104,7 +104,7 @@ width: 190px;
 }
 
 .cards {
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -190,10 +190,10 @@ footer#footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-
+@media (max-width: 1025px) {
     body {
         margin-left: 0;
+        min-height: max-content;
     }
 
     .sidebar {
