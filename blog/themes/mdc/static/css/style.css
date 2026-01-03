@@ -70,6 +70,17 @@ h6 a {
 
 pre {
     margin: 2em 1em 2em 4em;
+    font-family: 'Source Code Pro', monospace;
+    color: #e9ddba;
+    background: none repeat scroll 0 0 #201b2a;;
+    border-radius: 2px;
+    font-size: 0.9em;
+    font-style: normal;
+    letter-spacing: 0.015em;
+    line-height: 130%;
+    padding: 0.7em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .header {
