@@ -1,4 +1,4 @@
-Title: Deploy static site to AWS with S3 and Cloud Front
+Title: Deploy static site to AWS with S3 and CloudFront
 Date: 2026-01-03.
 Summary: How to publish a static website with AWS. 
 
