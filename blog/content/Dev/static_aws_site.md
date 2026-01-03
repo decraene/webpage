@@ -11,7 +11,11 @@ To host this webpage, I'm using 3 very basic services: s3 for storing all files 
 As for the bucket creation, things are simple here!
 
 - Create bucket with default options
-- Upload all files to your bucket (I recommend using the aws cli for this). 
+- Upload all files to your bucket (I recommend using the ```aws cli``` for this). 
+
+```#bash
+aws s3 sync my_local_folder s3://my_bucket_name
+```
 
 ## CloudFront Console
 
@@ -42,7 +46,7 @@ Then, in the newly created distribution, tune the following settings. In the fir
 
 ## Route53 Console
 
-Follow this steps:
+Follow these steps:
 
 - Add a record
 - Define simple record
@@ -52,5 +56,5 @@ Follow this steps:
 - In the search box, look for your cloud front distribution, and select it. 
 - Hit the Create button.
 
-Go to www.my-domain.com and cross your fingers. Hopefully you will se the content you uploaded to your bucket!
+Go to ```www.my-domain.com``` and cross your fingers. Hopefully you will see the content you uploaded to your bucket!
 
