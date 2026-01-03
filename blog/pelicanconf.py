@@ -27,7 +27,7 @@ EXTRA_PATH_METADATA = {
 SOCIAL = (
     ("Instagram", "https://www.instagram.com/mathieudecraene/"),
     ("Mastodon", "https://musicians.today/@decraene"),
-    ("Linked In", "https://fr.linkedin.com/in/decraene"),
+    ("LinkedIn", "https://fr.linkedin.com/in/decraene"),
     ("Bluesky", "https://bsky.app/profile/decraene.bsky.social"),
     ("Soundcloud", "https://soundcloud.com/mathieu-de-craene")
 )
