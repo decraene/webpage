@@ -4,7 +4,7 @@ body {
     min-width: 400px;
     min-height: 400px;
     padding: 0;
-    background-color: #2a2438;
+    background-color: #201b2a;
     /* Dark purple background */
     margin: 0;
     margin-left: 160px;
@@ -86,14 +86,14 @@ pre {
 .header {
     display: block;
     padding: 1em;
+    background-color: #2a2438;
 }
 
 .main {
+    background-color: #2a2438;
     padding-left: 1em;
     padding-right: 1em;
-    min-height: 50dvh;
     flex: 1;
-    margin:auto;
 }
 
 .main img {
@@ -215,6 +215,10 @@ footer#footer {
 
     .sidebar.visible {
         transform: translateX(0);
+    }
+
+    .sidebar li a {
+        margin-top: 10px;
     }
 
     .menu-toggle {
