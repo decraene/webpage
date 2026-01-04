@@ -178,6 +178,7 @@ blockquote {
     font-size: 24px;
     color: #ebe9d6;
     background: none;
+    background-color: #2a2438;
     border: none;
     cursor: pointer;
     display: none;
