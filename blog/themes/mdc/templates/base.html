@@ -7,6 +7,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="Pelican" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
   {% if SITESUBTITLE %}
   <meta name="description" content="{{ SITESUBTITLE }}" />
@@ -54,8 +57,20 @@
   {% endblock head %}
 </head>
 
-<body>
+<body class="noto-sans-mdc">
   {% block body %}
+  <!-- Main Content -->
+  <header class="header">
+    {% block header %}
+    <hgroup>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="logo">
+        <img src="{{ SITEURL }}/theme/img/logo.png" alt="Logo">
+      </div>
+      <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
+    </hgroup>
+    {% endblock header %}
+  </header>
   {% block nav %}
   <nav class="sidebar" id="sidebar">
     <ul class="menu">
@@ -75,25 +90,11 @@
     </ul>
   </nav>
   {% endblock nav %}
-
-  <!-- Main Content -->
-  <header class="header">
-    {% block header %}
-    <hgroup>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-      <div class="logo">
-        <img src="{{ SITEURL }}/theme/img/logo.png" alt="Logo">
-      </div>
-      <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
-    </hgroup>
-    {% endblock header %}
-
-  </header>
   <main class="main">
     {% block content %}
     {% endblock content %}
   </main>
-  <footer id="footer" class="shapedividers_com-3438">
+  <footer id="footer" class="shapedividers_com-8977">
     {% block footer %}
     <h4>Follow me: </h4>
     <ul>
@@ -103,8 +104,7 @@
     {% endblock footer %}
     </ul>
   </footer>
-  {% endblock body %}
-
+{% endblock body %}
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const sidebar = document.getElementById('sidebar');
