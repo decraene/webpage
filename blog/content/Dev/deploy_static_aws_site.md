@@ -1,7 +1,6 @@
 Title: Deploy a static site to AWS with S3 and CloudFront
 Date: 2026-01-03.
-Summary: How to publish a static website with AWS. 
-
+Summary:
 
 Navigating the AWS console is always a challenge. 
 To host this webpage, I'm using 3 very basic services: s3 for storing all files (```.html```, ```.css```, ```.png```, etc.), Route53 to handle DNS records, and CloudFront to cache and serve the content of the bucket. This makes a very efficient solution, that does not require to maintain any virtual machine, but combining all theses services was not that intuitive. Hopefully this tutorial can be of help!
